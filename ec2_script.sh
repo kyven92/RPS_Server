@@ -1,3 +1,4 @@
 #!/bin/bash
 
-source /home/ubuntu/racEnv/bin/activate && /home/ubuntu/racEnv/bin/python /home/ubuntu/rpsServer/data_uploader.py &
+/home/ubuntu/racEnv/bin/python /home/ubuntu/rpsServer/data_uploader.py &
+# source /home/venky/Desktop/djangoenv_py3/bin/activate 

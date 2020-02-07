@@ -118,4 +118,4 @@ if __name__=='__main__':
     RPS_Server.start(block=True)
 
 
-# jsonData_CS_server('/home/ubuntu/rpsServer/sample.json')
+# jsonData_CS_server('RPS_Server/sample.json')
