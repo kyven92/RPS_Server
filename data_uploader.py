@@ -110,7 +110,7 @@ def jsonData_CS_server(fileName):
 @RPS_Server.job(interval=timedelta(seconds=60))
 def run_RPS():
 
-    jsonData_CS_server('sample.json')
+    jsonData_CS_server('/home/ubuntu/rpsServer/sample.json')
     
 
 
@@ -118,4 +118,4 @@ if __name__=='__main__':
     RPS_Server.start(block=True)
 
 
-# jsonData_CS_server('sample.json')
+# jsonData_CS_server('/home/ubuntu/rpsServer/sample.json')
