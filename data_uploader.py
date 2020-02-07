@@ -8,7 +8,7 @@ from datetime import timedelta
 RPS_Server=Timeloop()
 
 
-base_url = "http://localhost:8000/"
+base_url = "http://3.6.79.236/"
 rps_username='racenergy'
 rps_password='rac1234'
 
@@ -109,16 +109,13 @@ def jsonData_CS_server(fileName):
 
 @RPS_Server.job(interval=timedelta(seconds=60))
 def run_RPS():
-    start_time = time.process_time()
+
     jsonData_CS_server('sample.json')
-    stop_time = time.process_time()
-    print("######### Uploading 1000 Records: ",(stop_time-start_time) )
-
-
-
+    
 
 
 if __name__=='__main__':
     RPS_Server.start(block=True)
 
 
+# jsonData_CS_server('sample.json')
