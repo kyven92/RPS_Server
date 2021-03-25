@@ -13,7 +13,7 @@ MarkupSafe==1.1.1
 psycopg2==2.8.4
 pycparser==2.19
 pytz==2019.3
-PyYAML==5.3
+PyYAML==5.4
 requests==2.22.0
 six==1.14.0
 sqlparse==0.3.0
